@@ -1,4 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./style.css";
 
-createRoot(document.getElementById("root")!).render(<StrictMode></StrictMode>);
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <h1 className="font-bold text-3xl">RideMix</h1>
+  </StrictMode>
+);
