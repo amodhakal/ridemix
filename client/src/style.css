@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Makes sure that the content isn't interfered by the notch or the corners */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+}
