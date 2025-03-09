@@ -5,7 +5,7 @@ export default function LandingPage() {
   const [departure, setDeparture] = useState("");
 
   return (
-    <div className="h-screen w-screen bg-gradient-to-r from-gray-200 to-blue-200 flex items-center">
+    <div className="h-screen w-screen bg-gray-50 flex items-center">
       <div className="w-full p-8">
         <h1 className="font-black text-6xl">RideMix</h1>
         <h3 className="text-gray-500 text-md">Where are you going?</h3>
@@ -17,7 +17,7 @@ export default function LandingPage() {
             value={arrival}
             required
             onChange={(e) => setArrival(e.target.value)}
-            className="px-4 py-3 border rounded-xl bg-white text-gray-400 border-gray-200"
+            className="px-4 py-3 border rounded-xl bg-white text-gray-500 border-gray-200"
           />
           <input
             type="text"
@@ -25,11 +25,11 @@ export default function LandingPage() {
             value={departure}
             required
             onChange={(e) => setDeparture(e.target.value)}
-            className="mt-3 px-4 py-3 border rounded-xl bg-white text-gray-400 border-gray-200"
+            className="mt-3 px-4 py-3 border rounded-xl bg-white text-gray-500 border-gray-200"
           />
           <button
             type="submit"
-            className="text-white bg-gradient-to-r from-black to-blue-950 py-4 border rounded-xl mt-5"
+            className="text-white bg-gray-700 py-4 border rounded-xl mt-5 hover:bg-gray-800 active:bg-black"
           >
             See options
           </button>
