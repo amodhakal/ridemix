@@ -15,6 +15,7 @@ export default function LandingPage() {
             type="text"
             placeholder="Arrival Point"
             value={arrival}
+            required
             onChange={(e) => setArrival(e.target.value)}
             className="px-4 py-3 border rounded-xl bg-white text-gray-400 border-gray-200"
           />
@@ -22,6 +23,7 @@ export default function LandingPage() {
             type="text"
             placeholder="Departure Point"
             value={departure}
+            required
             onChange={(e) => setDeparture(e.target.value)}
             className="mt-3 px-4 py-3 border rounded-xl bg-white text-gray-400 border-gray-200"
           />
